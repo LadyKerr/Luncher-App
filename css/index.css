@@ -1,3 +1,17 @@
+.btn {
+  background-color: #fcbe03;
+  border: 2px solid #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  width: 230px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,7 +178,7 @@ nav a {
 }
 nav a:hover {
   text-decoration: underline;
-  color: #fcbe03;
+  color: #22BC22;
 }
 @media (max-width: 500px) {
   nav a {
@@ -188,7 +202,6 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -213,4 +226,12 @@ nav a:hover {
 }
 .container .welcome .welcome-area h3 .child {
   color: #22BC22;
+}
+.container .cta {
+  background-color: #fcbe03;
+  padding: 30px 0;
+  text-align: center;
+}
+.container .section-sch {
+  padding-top: 60px;
 }
