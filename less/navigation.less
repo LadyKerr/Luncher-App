@@ -1,0 +1,30 @@
+//Navigation Styles
+
+nav {
+  justify-content: space-between;
+  //align-self: center;
+
+  @media @mobile {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+    color: @navigation;
+    font-size: 1.2rem;
+    margin: 20px;
+    
+    &:hover {
+      text-decoration: underline;
+      color: @green; //change to green?
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+} //nav ends

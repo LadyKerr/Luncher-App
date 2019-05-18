@@ -126,3 +126,65 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #444448;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #22BC22;
+}
+@media (max-width: 500px) {
+  nav a {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+.container .welcome {
+  background-image: url("/images/food.jpg");
+  height: 100%;
+  padding: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container .welcome-area {
+  color: red;
+}
