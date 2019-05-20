@@ -155,7 +155,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
@@ -169,6 +169,12 @@ nav {
     display: flex;
     justify-content: space-evenly;
   }
+}
+nav .luncher-logo {
+  margin-right: 120px;
+}
+nav .first-nav-item {
+  margin-left: 120px;
 }
 nav a {
   text-decoration: none;
@@ -185,6 +191,11 @@ nav a:hover {
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
+footer {
+  padding: 40px  20px;
+  text-align: center;
+  font-size: 1rem;
 }
 .container {
   width: 100%;
@@ -235,15 +246,14 @@ nav a:hover {
 .container .section-sch {
   padding-top: 60px;
 }
-.container .section-sch .sch-heading {
+.container .section-sch .heading {
   font-size: 2.5rem;
   font-family: "Raleway", Sans-serif;
   font-weight: 900;
   color: #22BC22;
   text-align: center;
-  text-decoration: underline;
   letter-spacing: -0.6px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
 }
 .container .section-sch .section-heading-p {
   text-align: center;
@@ -251,12 +261,55 @@ nav a:hover {
   font-weight: 250;
   letter-spacing: 0.2px;
   line-height: 20px;
+  margin: 10px 20px;
+  padding-top: 35px;
+  padding-bottom: 45px;
 }
-.container .partners {
-  padding: 30px 0 30px 0;
-}
-.container footer {
-  padding: 40px  20px;
+.container .section-sch .hr-line {
+  width: 60px;
+  height: 3px;
+  content: " ";
+  bottom: -5px;
   text-align: center;
-  border: 1px solid red;
+  background-color: #22BC22;
+}
+.container .school-list-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 45px;
+}
+.container .school-list-section .school-name {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 420px;
+  height: 250px;
+  padding: 25px;
+  margin-top: 35px;
+  justify-content: space-between;
+  text-align: center;
+}
+.container .school-list-section .name-box {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 0 30px 0;
+}
+.container .school-list-section .name-box-paragraph {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+.container .partners-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.container .partners-section .partners-header {
+  font-size: 2.5rem;
+  font-family: "Raleway", Sans-serif;
+  font-weight: 900;
+  color: #22BC22;
+  text-align: center;
+  letter-spacing: -0.6px;
+  padding-bottom: 12px;
 }
