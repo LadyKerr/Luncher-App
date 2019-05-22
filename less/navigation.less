@@ -1,21 +1,23 @@
 //Navigation Styles
 
 nav {
+  align-items: center;
   justify-content: space-between;
   
   @media @mobile {
-    width: 80%;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
   }
 
   .luncher-logo{
-    margin-right: 120px;
-  }
-
-  .first-nav-item{
     margin-left: 120px;
+    
+    @media @mobile {
+      position: center;
+      padding-top: 15px;
+    }
   }
 
   a {
@@ -30,8 +32,13 @@ nav {
     }
 
     @media @mobile {
-      flex-direction: column;
-      flex-wrap: wrap;
+      font-size: 1rem;
+      margin-right: 2px;
+
+      &:hover {
+        text-decoration: underline;
+        color: @green;
+      }
     }
   }
 } //nav ends
