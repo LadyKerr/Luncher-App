@@ -25,20 +25,17 @@ nav {
     color: @navigation;
     font-size: 1.2rem;
     margin: 20px;
+
+    @media @mobile {
+      font-size: 1rem;
+      margin-right: 2px;
+      text-decoration: underline;
+    }
     
     &:hover {
       text-decoration: underline;
       color: @green;
     }
 
-    @media @mobile {
-      font-size: 1rem;
-      margin-right: 2px;
-
-      &:hover {
-        text-decoration: underline;
-        color: @green;
-      }
-    }
   }
 } //nav ends
