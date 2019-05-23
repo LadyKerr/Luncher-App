@@ -15,8 +15,10 @@ navLink.forEach(link => {
   btn.addEventListener('mouseover', (event) => {
     btn.style.backgroundColor = 'white';
     btn.style.color = 'black';
+    btn.style.border = '2px solid gray';
   });
   btn.addEventListener('mouseout', (event) => {
     btn.style.backgroundColor = '#fcbe03';
     btn.style.color = 'white';
+    btn.style.border = '2px solid white';
   });
