@@ -363,6 +363,7 @@ footer {
 @media (max-width: 800px) {
   .container .school-list-section .school-name {
     margin: 0 auto;
+    margin-top: 25px;
   }
 }
 @media (max-width: 500px) {
