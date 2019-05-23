@@ -11,12 +11,18 @@ nav {
     margin: 0 auto;
   }
 
-  .luncher-logo{
-    margin-left: 120px;
+  @media @phone {
+  width: 80%;
+  }
+
+  .logo{
+    width: 200px;
+  
     
     @media @mobile {
       position: center;
-      padding-top: 15px;
+      width: 100px;
+      margin: 0 auto;
     }
   }
 
@@ -28,8 +34,13 @@ nav {
 
     @media @mobile {
       font-size: 1rem;
-      margin-right: 2px;
+      margin-right: 0;
       text-decoration: underline;
+    }
+
+    @media @phone {
+      font-size: .8rem;
+     margin: 0;
     }
     
     &:hover {
