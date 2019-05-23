@@ -22,3 +22,5 @@ navLink.forEach(link => {
     btn.style.color = 'white';
     btn.style.border = '2px solid white';
   });
+
+  
