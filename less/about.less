@@ -61,26 +61,48 @@ html, body {
 .container {
 	max-width: 80%;
 
+	header {
+
+		nav {
+			display: flex;
+			align-items: center;
+		}
+	}
+
 	h1 {
+		font-weight: 900;
+		font-family: "Raleway", sans-serif;
 		text-align: center;
+		color: @green;
 		margin: 8% 0;
-		font-size: 1.6rem;
-		text-transform: uppercase;
+		font-size: 3rem;
+		// text-transform: uppercase;
 	}
 
 	.desc {
 		margin: 8% auto;
+		font-size: 1.2rem;
+		font-weight: 250;
 		line-height: 1.4;
+		color: @navigation;
+	}
+
+	.team-filter {
+		margin-bottom: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 
 	.team-item {
-		width: 400px;
-		height: 300px;
+		width: 326px;
+		height: 326px;
 		display: inline-flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: stretch;
-		border: 2px solid black;
+		border: 2px solid @navigation;
+		border-radius: 3%;
 		margin: 10px 20px;
 	}
 
@@ -88,7 +110,7 @@ html, body {
 			width: 100px;
 			height: 100px;
 			margin: 0 auto;
-			border: 1px solid black;
+			border: 1px solid @navigation;
 			border-radius: 50%;
 			background-color: gainsboro;
 		}
@@ -97,7 +119,16 @@ html, body {
 			margin: 0 auto;
 			font-size: 14px;
 			text-align: center;
-			line-height: 1.5;
+			line-height: 1.6;
+			color: @navigation;
+
+			.team-name {
+				font-size: 1.3rem;
+			}
+
+			.title {
+				font-size: 16px;
+			}
 
 		}
 
@@ -108,7 +139,16 @@ html, body {
 			.fab {
 				color: @green;
 			}
+}
 
+footer {
+	padding: 30px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: @white;
+	font-size: 1rem;
+	font-weight: 300;
+	background-color: @luncher;
 }
 
 

@@ -171,7 +171,7 @@ nav {
   }
 }
 nav img.luncher-logo {
-  max-width: 14%;
+  max-width: 13%;
   height: auto;
   margin-right: 120px;
 }
@@ -210,7 +210,7 @@ footer {
 .container header {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 30px;
 }
 .container .welcome {
   width: 100%;
@@ -445,31 +445,47 @@ body {
 .container {
   max-width: 80%;
 }
+.container header nav {
+  display: flex;
+  align-items: center;
+}
 .container h1 {
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
   text-align: center;
+  color: #22BC22;
   margin: 8% 0;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-size: 3rem;
 }
 .container .desc {
   margin: 8% auto;
+  font-size: 1.2rem;
+  font-weight: 250;
   line-height: 1.4;
+  color: #444448;
+}
+.container .team-filter {
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .container .team-item {
-  width: 400px;
-  height: 300px;
+  width: 326px;
+  height: 326px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  border: 2px solid black;
+  border: 2px solid #444448;
+  border-radius: 3%;
   margin: 10px 20px;
 }
 .container .team-img {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #444448;
   border-radius: 50%;
   background-color: gainsboro;
 }
@@ -477,7 +493,14 @@ body {
   margin: 0 auto;
   font-size: 14px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #444448;
+}
+.container .team-text .team-name {
+  font-size: 1.3rem;
+}
+.container .team-text .title {
+  font-size: 16px;
 }
 .container .socials {
   margin: 0 auto;
@@ -485,4 +508,13 @@ body {
 }
 .container .fab {
   color: #22BC22;
+}
+footer {
+  padding: 30px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fcbe03;
 }
