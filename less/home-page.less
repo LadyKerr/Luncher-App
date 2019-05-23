@@ -5,20 +5,36 @@
   header {
     display: flex;
     align-items: center;
-    margin: 30px;
-
+    justify-content: space-between;
+    
     @media @mobile {
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
     @media @phone {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+    }
+
+    .logo{
+      width: 10%;
+      padding: 0;
+      margin: 0;
+    
+      @media @mobile {
+        position: center;
+        width: 12%;
+        margin: 0 auto;
+      }
+
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 
   .welcome {
   width: 100%;
-  height: 650px;
+  height: 685px;
   background-image: url("../images/welcome-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +154,7 @@
     width: 320px;
     height: 200px;
     padding: 25px;
-    margin-top: 35px;
+    margin-top: 30px;
     justify-content: space-between;
     text-align: center;
 
@@ -154,6 +170,17 @@
 
     @media @phone {
       width: 280px;
+    }
+
+    img {
+      max-width: 30%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 

@@ -155,17 +155,17 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;
 }
 nav {
-  align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
   nav {
-    width: 100%;
+    width: 80%;
     height: auto;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -176,19 +176,11 @@ nav {
     width: 80%;
   }
 }
-nav .logo {
-  width: 200px;
-}
-@media (max-width: 500px) {
-  nav .logo {
-    position: center;
-    width: 100px;
-    margin: 0 auto;
-  }
-}
 nav a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #444445;
+  font-family: 'Baloo Bhai', 'Open Sans';
   font-size: 1.2rem;
   margin: 20px;
 }
@@ -214,7 +206,7 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   background-color: #fcbe03;
   display: flex;
   justify-content: center;
@@ -227,21 +219,36 @@ footer {
 .container header {
   display: flex;
   align-items: center;
-  margin: 30px;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .container header {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 375px) {
   .container header {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
+}
+.container header .logo {
+  width: 10%;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .container header .logo {
+    position: center;
+    width: 12%;
+    margin: 0 auto;
+  }
+}
+.container header .logo:hover {
+  transform: scale(1.5);
 }
 .container .welcome {
   width: 100%;
-  height: 650px;
+  height: 685px;
   background-image: url("../images/welcome-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -356,7 +363,7 @@ footer {
   width: 320px;
   height: 200px;
   padding: 25px;
-  margin-top: 35px;
+  margin-top: 30px;
   justify-content: space-between;
   text-align: center;
 }
@@ -376,6 +383,15 @@ footer {
   .container .school-list-section .school-name {
     width: 280px;
   }
+}
+.container .school-list-section .school-name img {
+  max-width: 30%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.container .school-list-section .school-name img:hover {
+  transform: scale(1.5);
 }
 .container .school-list-section .name-box {
   font-size: 1.5rem;
