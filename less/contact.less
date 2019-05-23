@@ -1,0 +1,107 @@
+.contact-us {
+  background-image: url("../images/contact.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.contact-us h1 {
+    color:  #FFCC11;
+    text-align: center;
+    -webkit-text-stroke: 3px green;
+    font-size: 6rem;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 900;
+    position: relative;
+}
+
+#form-main {
+  width: 100%;
+}
+
+#form-div {
+  background-color: #FFCC11;
+  padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+}
+
+.feedback {
+  color: #385E0F;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+	width: 100%;
+  border: 2px solid #22BC22;
+}
+
+#btn-submit {
+  width: 100%;
+  border: 4px solid #fbfbfb;
+  cursor: pointer;
+  background-color: #22BC22;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: -4px;
+}
+
+/* Little Images ---------------------------------- */
+
+#name {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment {
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+@media (max-width: 580px) {
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 80%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .contact-us {
+    width: 50%;
+  }
+  
+}
+
