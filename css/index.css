@@ -154,6 +154,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 500px) {
+  img {
+    height: 200px;
+  }
+}
+@media (max-width: 375px) {
+  img {
+    height: 200px;
+  }
+}
 .container {
   max-width: 1200px;
   width: 80%;
@@ -412,14 +422,6 @@ footer {
   letter-spacing: -0.6px;
   padding-bottom: 12px;
 }
-.heading .hr-line {
-  width: 60px;
-  height: 3px;
-  content: " ";
-  bottom: -5px;
-  text-align: center;
-  background-color: #22BC22;
-}
 .carousel {
   width: 100%;
   display: flex;
@@ -440,23 +442,52 @@ footer {
   width: 50px;
   height: 50px;
   font-family: 'Stylish', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 375px) {
+  .left-btn,
+  .right-btn {
+    font-size: 2rem;
+  }
 }
 .left-btn {
   top: 50%;
   left: 25px;
 }
+@media (max-width: 375px) {
+  .left-btn {
+    top: 20%;
+  }
+}
 .right-btn {
   top: 50%;
   right: 25px;
 }
+@media (max-width: 375px) {
+  .right-btn {
+    top: 20%;
+  }
+}
 .carousel-img {
   width: 30rem;
+}
+.carousel-img:hover {
+  transform: scale(1.5);
 }
 .slide {
   width: 50%;
   height: 300px;
   display: none;
+}
+@media (max-width: 500px) {
+  .slide {
+    height: 200px;
+  }
+}
+@media (max-width: 375px) {
+  .slide {
+    height: 200px;
+  }
 }
 .contact-us {
   background-image: url("../images/contact.svg");
