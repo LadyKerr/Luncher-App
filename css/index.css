@@ -532,3 +532,44 @@ footer {
   font-weight: 300;
   background-color: #fcbe03;
 }
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 27px;
+  margin: 20px auto;
+  background-color: #ffffff;
+}
+@media (min-width: 1280px) {
+  .tabs {
+    width: 1280px;
+  }
+}
+.tabs .titles {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs .titles .heading {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .titles .tab {
+  border: 2px solid green;
+  color: white;
+  background-color: #444448;
+  margin: 0 8px;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .titles .tab:hover {
+  text-decoration: underline;
+}
+.tabs .titles .active-tab {
+  background-color: #444448;
+  color: white;
+  border: 2px solid #fcbe03;
+}

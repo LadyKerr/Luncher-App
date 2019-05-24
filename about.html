@@ -8,6 +8,7 @@
 		<link href="css/index.css" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<script src="./js/tabs.js" async></script>
 </head>
 <body>
 	<header>
@@ -26,8 +27,19 @@
 		<div class="hero-img"><h1>About</h1></div>
   
 		<p class="desc">Meet the Luncher Team. Flavor centerpiece plate, delicious ribs bone-in meat, excess chef end. sweet effortlessly pork, low heat smoker soy sauce flavor meat, rice fruit fruit. Romantic fall-off-the-bone butternut chuck rice burgers. Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk greens. </p>
+			
+		<!-- TABS COMPONENT -->
+		<div class="tabs">
+			<div class="titles">
+				<span class="heading">TEAM TITLES:</span>
+				<div data-tab="all" class="tab active-tab">ALL</div>
+				<div data-tab="progman" class="tab">PROGRAM MANAGER</div>
+				<div data-tab="nutrition" class="tab">NUTRITIONIST</div>
+				<div data-tab="liaison" class="tab">SCHOOL LIAISON</div>
+			</div>
+		</div>
 		<section class="team-filter">
-			<div class="team-item">
+			<div class="team-item" data-tab="progman">
 				<div class="team-img"><img src="images/lisa.jpg" alt="lisa headshot"></div>
 				<div class="team-text">
 					<h2 class="team-name">Lisa M.</h2>
@@ -40,7 +52,7 @@
 				</div>
 			</div>
 
-			<div class="team-item">
+			<div class="team-item" data-tab="liaison">
 				<div class="team-img"><img src="images/nicole.jpg" alt="nicole headshot"></div>
 				<div class="team-text">
 					<h2 class="team-name">Nicole S.</h2>
@@ -53,7 +65,7 @@
 				</div>
 			</div>
 		
-			<div class="team-item">
+			<div class="team-item" data-tab="liaison">
 				<div class="team-img"><img src="images/aliyah.jpg" alt="aliyah headshot"></div>
 				<div class="team-text">
 					<h2 class="team-name">Aliyah L.</h2>
@@ -66,7 +78,7 @@
 				</div>
 			</div>
 		
-			<div class="team-item">
+			<div class="team-item" data-tab="liaison">
 				<div class="team-img"><img src="images/drew.jpg" alt="drew headshot"></div>
 				<div class="team-text">
 					<h2 class="team-name">Drew W.</h2>
@@ -79,7 +91,7 @@
 				</div>
 			</div>
 
-			<div class="team-item">
+			<div class="team-item" data-tab="nutrition">
 				<div class="team-img"><img src="images/cameron.jpg" alt="Cameron Headshot"></div>
 				<div class="team-text">
 					<h2 class="team-name">Cameron P.</h2>
@@ -92,7 +104,7 @@
 				</div>
 			</div>
 
-			<div class="team-item">
+			<div class="team-item" data-tab="nutrition">
 				<div class="team-img"><img src="images/kevin.jpg" alt="Kevin Headshot"></div>
 				<div class="team-text">
 					<h2 class="team-name">Kevin S.</h2>
