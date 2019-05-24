@@ -490,8 +490,22 @@ footer {
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
+  display: flex;
+  justify-content: center;
 }
-.contact-us h1 {
+@media (max-width: 500px) {
+  .contact-us {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 375px) {
+  .contact-us {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+.contact-us #in-touch {
   color: #FFCC11;
   text-align: center;
   -webkit-text-stroke: 3px green;
@@ -500,8 +514,27 @@ footer {
   font-weight: 900;
   position: relative;
 }
+@media (max-width: 500px) {
+  .contact-us #in-touch {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 375px) {
+  .contact-us #in-touch {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0 auto;
+  }
+}
 #form-main {
   width: 100%;
+}
+@media (max-width: 375px) {
+  #form-main {
+    margin: 0 auto;
+  }
 }
 #form-div {
   background-color: #FFCC11;
@@ -515,6 +548,11 @@ footer {
   position: absolute;
   margin-top: 30px;
   margin-left: -260px;
+}
+@media (max-width: 375px) {
+  #form-div {
+    margin: 0 auto;
+  }
 }
 .feedback {
   color: #385E0F;
