@@ -181,20 +181,15 @@ nav {
     margin: 0 auto;
   }
 }
-
 @media (max-width: 375px) {
   nav {
     width: 80%;
   }
-
+}
 nav img.luncher-logo {
   max-width: 13%;
   height: auto;
   margin-right: 120px;
-}
-nav .first-nav-item {
-  margin-left: 120px;
-
 }
 nav a {
   text-decoration: none;
@@ -489,16 +484,6 @@ footer {
   height: 300px;
   display: none;
 }
-@media (max-width: 500px) {
-  .slide {
-    height: 200px;
-  }
-}
-@media (max-width: 375px) {
-  .slide {
-    height: 200px;
-  }
-}
 .contact-us {
   background-image: url("../images/contact.svg");
   background-size: cover;
@@ -750,7 +735,7 @@ body {
   font-size: 1.2rem;
   font-weight: 250;
   line-height: 1.4;
-  color: #444448;
+  color: #444445;
 }
 .container .team-filter {
   margin-bottom: 80px;
@@ -765,7 +750,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  border: 2px solid #444448;
+  border: 2px solid #444445;
   border-radius: 3%;
   margin: 10px 20px;
 }
@@ -773,7 +758,7 @@ body {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  border: 1px solid #444448;
+  border: 1px solid #444445;
   border-radius: 50%;
   background-color: gainsboro;
 }
@@ -782,7 +767,7 @@ body {
   font-size: 14px;
   text-align: center;
   line-height: 1.6;
-  color: #444448;
+  color: #444445;
 }
 .container .team-text .team-name {
   font-size: 1.3rem;
