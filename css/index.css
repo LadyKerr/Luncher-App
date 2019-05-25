@@ -187,7 +187,7 @@ nav {
   }
 }
 nav img.luncher-logo {
-  max-width: 13%;
+  max-width: 10%;
   height: auto;
   margin-right: 120px;
 }
@@ -760,23 +760,36 @@ body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
-.container {
-  max-width: 80%;
-}
-.container header nav {
+header nav {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
+.container {
+  max-width: 100%;
+}
+.container .hero-img {
+  width: 100%;
+  height: 110%;
+  background-image: url("../images/dinner-egg-flatlay-54455.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #fcbe03;
+  border-bottom: 3px solid #fcbe03;
+}
 .container h1 {
-  font-weight: 900;
+  font-weight: 400;
   font-family: "Raleway", sans-serif;
   text-align: center;
   color: #22BC22;
-  margin: 8% 0;
-  font-size: 3rem;
+  margin: 15% 0;
+  font-size: 5rem;
 }
 .container .desc {
   margin: 8% auto;
+  padding: 30px;
   font-size: 1.2rem;
   font-weight: 250;
   line-height: 1.4;
@@ -800,12 +813,15 @@ body {
   margin: 10px 20px;
 }
 .container .team-img {
-  width: 100px;
-  height: 100px;
   margin: 0 auto;
-  border: 1px solid #444445;
+
+}
+.container img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid white;
+  //border: 1px solid #444445;
   border-radius: 50%;
-  background-color: gainsboro;
 }
 .container .team-text {
   margin: 0 auto;
@@ -835,4 +851,45 @@ footer {
   font-size: 1rem;
   font-weight: 300;
   background-color: #fcbe03;
+}
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 27px;
+  margin: 20px auto;
+  background-color: #ffffff;
+}
+@media (min-width: 1280px) {
+  .tabs {
+    width: 1280px;
+  }
+}
+.tabs .titles {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs .titles .heading {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .titles .tab {
+  border: 2px solid green;
+  color: white;
+  background-color: #444448;
+  margin: 0 8px;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .titles .tab:hover {
+  text-decoration: underline;
+}
+.tabs .titles .active-tab {
+  background-color: #444448;
+  color: white;
+  border: 2px solid #fcbe03;
 }
