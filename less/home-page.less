@@ -5,18 +5,53 @@
   header {
     display: flex;
     align-items: center;
-    margin: 30px;
+    justify-content: space-between;
+    
+    @media @mobile {
+      margin-top: 10px;
+    }
+
+    @media @phone {
+      margin-bottom: 10px;
+    }
+
+    .logo{
+      width: 10%;
+      padding: 0;
+      margin: 0;
+    
+      @media @mobile {
+        position: center;
+        width: 15%;
+        height: 100px;
+        margin: 0 auto;
+      }
+
+      @media @phone {
+        width: 20%;
+        height: 100px;
+      }
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
 
   .welcome {
   width: 100%;
-  height: 650px;
-  background-image: url("/images/welcome-img.jpg");
+  height: 685px;
+  background-image: url("../images/welcome-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px;
+  //padding: 40px;
   display: flex;
   justify-content: center;
+
+  @media @mobile {
+    width: auto;
+    height: 500px;
+  }
 
   .welcome-area {
     color: @white;
@@ -30,6 +65,18 @@
       padding-top: 100px;
       padding-bottom: 30px;
 
+      @media @mobile {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1;
+        padding-top: 20px;
+        margin: 0 auto;
+      }
+
+      @media @phone {
+        font-size: 3.2rem;
+      }
+
       .lunchBold {
         color: @luncher;
       }
@@ -38,6 +85,16 @@
     h3 {
       font-size: 1.25rem;
       font-weight: 200;
+
+      @media @mobile {
+        line-height: 1.5;
+        padding-top: 10px;
+      }
+
+      @media @phone {
+        font-size: 1.2rem;
+        padding-top: 5px;
+      }
 
       .child {
         color: @green;
@@ -50,6 +107,10 @@
     background-color: @luncher;
     padding: 30px 0;
     text-align: center;
+
+    @media @mobile {
+      padding: 20px 0;
+    }
   }
 
   .section-sch {
@@ -95,42 +156,52 @@
   .school-name {
     border: 2px solid black;
     border-radius: 15px;
+    box-shadow: 5px 10px @gray;
     width: 320px;
     height: 200px;
     padding: 25px;
-    margin-top: 35px;
+    margin-top: 30px;
     justify-content: space-between;
     text-align: center;
+
+    @media @tablet {
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+
+    @media @mobile {
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+
+    @media @phone {
+      width: 280px;
+    }
+
+    img {
+      max-width: 30%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
 
   .name-box {
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 20px 0 30px 0;
+    padding: 20px 0 20px 0;
   }
 
   .name-box-paragraph {
   font-size: 0.8rem;
   letter-spacing: 0.2px;
-  line-height: 20px;
+  line-height: 15px;
+    }
   }
-}
-
-// .partners-section {
-//     display: flex;
-//     flex-wrap: wrap;
-//     padding-bottom: 50px;
-
-//   .partners-header {
-//     font-size: 2.5rem;
-//     font-family: "Raleway", Sans-serif;
-//     font-weight: 900;
-//     color: @green;
-//     text-align: center;
-//     letter-spacing: -0.6px;
-//     padding-bottom: 12px;
-//     } //partner header ends here
-// } //partner section emds
 
 }//end of container
 

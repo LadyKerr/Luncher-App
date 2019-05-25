@@ -7,22 +7,23 @@
     
       <title>Luncher-App</title>
 
-      <link rel="stylesheet" href="css/index.css">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" async></script>
+    <script src="./js/partners.js" async></script>
   </head>
 
   <body>
     <!--Navigation Items with logo-->
     <div class="container">
-      <header>
-        <nav>
-          <img src="images/Luncher.png" class="luncher-logo" alt="luncher-logo">
-          <a href="#" class="first-nav-item">Home</a>
-          <a href="#">About</a>
-          <a href="#">Team</a>
-          <a href="#">Schools</a>
-          <a href="admin-login.html">Login</a>
-          <a href="#">Contact</a>
-        </nav>
+        <header>
+          <nav>
+            <a href="index.html" class="first-nav-item">Home</a>
+            <a href="about.html">About</a>
+            <a href="admin-login.html">Login</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        <img src="./images/Luncher.png" class="logo" alt="luncher-logo">
       </header>
 
       <!--Large image background with text overlay-->
@@ -57,77 +58,83 @@
         
       <section class="school-list-section">
           <div class="school-name">
-            <img src="#" alt="sch-pic" />
-            <h3 class="name-box">This is A School's Name</h3>
+            <img src="./images/pic1.png" alt="sch-pic" />
+            <h3 class="name-box">St. John's High School</h3>
             <p class="name-box-paragraph">
-              School Name is located in somewhere. Pea horseradish azuki bean
-              lettuce avocado asparagus okra.
+              Located in the LockHart District.
             </p>
           </div>
 
           <div class="school-name">
-            <img src="#" alt="sch-pic" />
-            <h3 class="name-box">This is Another School's Name</h3>
+            <img src="./images/pic1.png" alt="sch-pic" />
+            <h3 class="name-box">Marcus Middle-School</h3>
             <p class="name-box-paragraph">
-              School Name is located in somewhere. Pea horseradish azuki bean
-              lettuce avocado asparagus okra.
+              Located in Angus District.
             </p>
           </div>
 
           <div class="school-name">
-            <img src="#" alt="sch-pic" />
-            <h3 class="name-box">This is Another School's Name</h3>
+            <img src="./images/pic1.png" alt="sch-pic" />
+            <h3 class="name-box">Nova High School</h3>
             <p class="name-box-paragraph">
-              School Name is located in somewhere. Pea horseradish azuki bean
-              lettuce avocado asparagus okra.
+              Located in Decatur District.
             </p>
           </div>
 
           <div class="school-name">
-            <img src="#" alt="sch-pic" />
-            <h3 class="name-box">This is Another School's Name</h3>
+            <img src="./images/pic1.png" alt="sch-pic" />
+            <h3 class="name-box">Lambda Middle School</h3>
             <p class="name-box-paragraph">
-              School Name is located in somewhere. Pea horseradish azuki bean
-              lettuce avocado asparagus okra.
+              Located in Perry Winkle District.
             </p>
           </div>
 
           <div class="school-name">
-            <img src="#" alt="sch-pic" />
-            <h3 class="name-box">This is the Next School's Name</h3>
+            <img src="./images/pic1.png" alt="sch-pic" />
+            <h3 class="name-box">JavaPy Middle-School</h3>
             <p class="name-box-paragraph">
-              School Name is located in somewhere. Pea horseradish azuki bean
-              lettuce avocado asparagus okra.
+              Located in Python Town District.
             </p>
           </div>
 
           <div class="school-name">
-            <img src="#" alt="sch-pic" />
-            <h3 class="name-box">This is Also a School's Name</h3>
+            <img src="./images/pic1.png" alt="sch-pic" />
+            <h3 class="name-box">Taylor High School</h3>
             <p class="name-box-paragraph">
-              School Name is located in somewhere. Pea horseradish azuki bean
-              lettuce avocado asparagus okra.
+              Located in Kingston District.
             </p>
           </div>
         </div>
       </section>
 
-    <!--This will be a list of our partners with images moving-->
-    <!--
-      <section class="partners-section">
-        <div> 
-          <h1 class="partners-header">Our Partners</h1>
-            <p class="partner-section-p">Celery quandong swiss chard chicory earthnut pea potato.</p>
-              <div> <img src="#" alt="partner-logo"> </div>
-              <div> <img src="#" alt="partner-logo"> </div>
-              <div> <img src="#" alt="partner-logo"> </div>
-              <div> <img src="#" alt="partner-logo"> </div>     
-        </div>
-      </section>
-    --> 
-        <footer>
-          <p>Copyright Luncher 2019</p>
-        </footer>
+      <!--PARTNERS SECTION-->
+      <section>
+          <h2 class="heading">Our Partners</h2>
+          <!--Create Component For Here-->
+          <div class="carousel">
+            <div class="left-btn">Prev</div>
+            
+              <div class="slide">
+                <img class="carousel-img" src="./images/pic2.png" alt="item-image-1"/>
+              </div> <!--item1 class ends-->
+              
+              <div class="slide">
+                <img class="carousel-img" src="./images/pic3.png" alt="item-image-1"/>
+              </div> <!--item2 class ends-->
+            
+              <div class="slide">
+                <img class="carousel-img" src="./images/pic4.png" alt="item-image-1"/>
+              </div> <!--item2 class ends-->
+            
+           <div class="right-btn">Next</div>
+            
+          </div> <!--main carousel ends-->
+        </section>
+
+              
+      <footer>
+        <p>Copyright Luncher 2019</p>
+      </footer>
 
     </div>
   </body>
